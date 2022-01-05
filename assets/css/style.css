@@ -10,6 +10,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all 100ms ease;
 }
 
 body {
@@ -137,11 +138,6 @@ section {
   overflow: hidden;
 }
 
-.work-item img {
-  min-width: 100%;
-  min-height: 100%;
-}
-
 .work-item h2 {
   position: absolute;
   color: var(--primary-color);
@@ -149,9 +145,18 @@ section {
   bottom: 20px;
   left: 0px;
   padding: 10px 20px 10px 50px;
+  z-index: 100;
 }
 
+.work-item img {
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 60%;
+}
 
+.work-item img:hover {
+  opacity: 100%;
+}
 
 
 
@@ -267,21 +272,5 @@ section {
 }
   .intro p {
     width: 100%;
-  }
-
-  .trainer {
-    flex: 0 100%;
-  }
-
-  .contact-info {
-    text-align: center;
-  }
-
-  .contact-info > * {
-    flex: 0 100%;
-  }
-
-  .contact-form {
-  order: 3;
   }
 }

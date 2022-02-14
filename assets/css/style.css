@@ -165,6 +165,7 @@ section {
   min-width: 100%;
   min-height: 100%;
   opacity: 60%;
+  width: 100%;
 }
 
 .work-item img:hover {
